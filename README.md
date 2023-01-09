@@ -7,7 +7,7 @@
 - Install Git
 - Have a text editor
 
-## Contents
+## Lifecycle
 
 - "Build": Generate the website from the markdown and configuration files in the directory dist/.
 - "Clean": Cleanup the content of the directory dist/.
