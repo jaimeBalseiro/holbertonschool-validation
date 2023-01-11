@@ -14,4 +14,4 @@
 - "post": Create a new blog post whose filename and title come from the environment variables POST_TITLE and POST_NAME.
 - "help": Provides help about the commands.
 
-## Workflow
+## Build Workflow
