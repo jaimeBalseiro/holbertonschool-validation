@@ -20,7 +20,7 @@ test: ##Tests the app to check if it runs correctly
 	curl http://localhost:9999
 	curl http://localhost:9999/health
 
-lint: ##Linter
+lint: ##Checks the errors without compiling the app
 	golangci-lint run
 
 .SILENT:
