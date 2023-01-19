@@ -18,7 +18,7 @@ run: ##Runs the app in the background
 	./awesome-api >./awesome.log 2>&1 &
 
 stop: ##Stops the app w/ kill
-	kill "$(pgrep awesome-api)"
+	pkill awesome-api
 
 test: ##Tests the app to check if it runs correctly
 	curl http://localhost:9999
