@@ -1,4 +1,7 @@
-build: ##Building a website from scratch
+lint: ##Linter
+	golangci-lint run
+
+build: lint ##Building a website from scratch
 	hugo
 	go build -o awesome-api
 
@@ -9,7 +12,6 @@ stop: ##Stops the app w/ kill
 	pkill awesome-api
 
 clean: ##Deleting all content in the directory
-	pkill awesome-api
 	rm -rf ./dist/
 	rm -f awesome-api awesome.log
 
@@ -20,9 +22,6 @@ post: ##Create a blog post
 test: ##Tests the app to check if it runs correctly
 	curl http://localhost:9999
 	curl http://localhost:9999/health
-
-lint: ##Linter
-	golangci-lint run
 
 .SILENT:
 help: ##Provides help about the commands
