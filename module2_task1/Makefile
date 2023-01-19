@@ -9,7 +9,6 @@ stop: ##Stops the app w/ kill
 	pkill awesome-api
 
 clean: ##Deleting all content in the directory
-	pkill awesome-api
 	rm -rf ./dist/
 	rm -f awesome-api awesome.log
 
